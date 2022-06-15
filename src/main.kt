@@ -19,6 +19,19 @@
  * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
  *
  */
+/*
+Solucion de MoureDev
+fun main() {
+    println(isAnagram("amor", "roma"))
+}
+
+private fun isAnagram(wordOne: String, wordTwo: String): Boolean {
+    if (wordOne.lowercase() == wordTwo.lowercase()) {
+        return false
+    }
+    return wordOne.lowercase().toCharArray().sortedArray().contentEquals(wordTwo.lowercase().toCharArray().sortedArray())
+}
+ */
 fun main() {
     println("Ingresa la primer palabra")
     val palabra1 = readLine()
@@ -33,7 +46,7 @@ fun main() {
 
 }
 
-fun anagrama(palabra1: String, palabra2: String) {
+private fun anagrama(palabra1: String, palabra2: String) {
     val arrayPalabra1 = arrayListOf<Char>()
     val arrayPalabra2 = arrayListOf<Char>()
     palabra1.lowercase().forEach {
